@@ -1,0 +1,22 @@
+html{
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto  auto auto auto 15px;
+    grid-template-rows: auto 15px repeat(4,auto) 30px;
+    background-color: lightcyan;
+}
+
+#table{
+        grid-column: 3;
+        grid-row: 1;
+}
+
+#chart{
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 3;
+}
